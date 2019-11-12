@@ -20,9 +20,9 @@ def setup(Rpin, Gpin, Bpin):
 	p_G = GPIO.PWM(pins['pin_G'], 1999)
 	p_B = GPIO.PWM(pins['pin_B'], 5000)
 	
-	p_R.start(100)      # Initial duty Cycle = 0(leds off)
-	p_G.start(100)
-	p_B.start(100)
+	p_R.start(10)      # Initial duty Cycle = 0(leds off)
+	p_G.start(10)
+	p_B.start(10)
 
 def map(x, in_min, in_max, out_min, out_max):
 	return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min
