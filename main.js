@@ -24,7 +24,7 @@ app.on('ready', () => {
    创建一个新的应用窗口，并将它赋值给 mainWindow变量。
   */
  let { screen } = require('electron')
-  var width = screen.getPrimaryDisplay().workAreaSize.width;
+  var width = 100
   mainWindow = new BrowserWindow({
     width:screen.getPrimaryDisplay().workAreaSize.width,
     height:screen.getPrimaryDisplay().workAreaSize.height,
