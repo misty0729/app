@@ -76,13 +76,14 @@ function displayFile(file) {
   } else {
     // 不属于文件夹以外的文件，比如文本文件，文档等
     clone.querySelector('img').addEventListener('dblclick', () => {
-        console.log("HHHHHH");
-      fileSystem.openFile(file.path);
-    const options = {
+        // console.log("HHHHHH");
+      // fileSystem.openFile(file.path);
+      const options = {
         encoding: "utf-8"
       };
+      console.log(file.path);
       require("child_process").exec(
-        "python3 test.py",
+        "python3 "+file.path,
         options,
         (error, stdout, stderr) => {
           console.log(error);
