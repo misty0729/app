@@ -11,7 +11,7 @@
   "author": "tugenhua",
   "license": "ISC",
   "dependencies": {
-    "async": "^3.1.0",
+    "async": "^3.2.2",
     "child_process": "^1.0.2",
     "fs": "0.0.1-security",
     "lunr": "^1.0.0",
